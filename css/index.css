@@ -12,11 +12,11 @@ img {
 }
 
 a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+    color: rgb(20, 219, 226);
+    font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
 }
 
 a:hover {
-    color: rgb(226, 26, 26);
+    color: rgb(237, 94, 94);
 }
