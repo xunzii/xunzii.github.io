@@ -1,14 +1,18 @@
 body {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0,0,0);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     padding: 180px;
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
 }
 
 p {
@@ -18,13 +22,20 @@ p {
     text-align: center;
 }
 
-a {
-    color: rgb(20, 219, 226);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
+button {
+    background-color: rgb(0, 128, 255);
+    color: black;
+    border: 2px solid grey;
+    border-radius: 3px;
+    padding: 5px 10px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 1px 8px;
+    cursor: pointer;
 }
 
-a:hover {
-    color: rgb(237, 94, 94);
+button:hover {
+    background-color: rgb(0, 128, 255);
 }
