@@ -7,12 +7,15 @@ body {
 
 img {
     width: 50%;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
 div {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40vh;
+
 }
 
 p {
@@ -25,9 +28,9 @@ p {
 button {
     background-color: rgb(0, 128, 255);
     color: black;
-    border: 2px solid grey;
+    border: 1px solid grey;
     border-radius: 3px;
-    padding: 5px 10px;
+    padding: 3px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -37,5 +40,5 @@ button {
 }
 
 button:hover {
-    background-color: rgb(0, 128, 255);
+    background-color: rgb(26, 186, 159);
 }
