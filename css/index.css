@@ -1,3 +1,10 @@
+h1 {
+    color: rgb(20, 219, 226);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 38px;
+    text-align: center;
+}
+
 body {
     background-color: rgb(0,0,0);
     font-family: 'Courier New', Courier, monospace;
@@ -6,16 +13,11 @@ body {
 }
 
 img {
-    width: auto;
-    border-radius: 5px;
+    height: 400px;
     border: 1px solid grey;
-}
-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
-
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
 }
 
 p {
@@ -25,20 +27,40 @@ p {
     text-align: center;
 }
 
-button {
+a {
     background-color: rgb(0, 128, 255);
     color: black;
     border: 1px solid grey;
     border-radius: 3px;
-    padding: 3px 10px;
+    padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
-    margin: 1px 8px;
-    cursor: pointer;
+    margin: 10px 10px;
 }
 
-button:hover {
-    background-color: rgb(26, 186, 159);
+a:hover {
+    background-color: rgb(0, 255, 255);
+    color: black;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 10px;
+}
+
+a:active {
+    background-color: rgb(0, 128, 255);
+    color: black;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 10px 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 10px;
 }
