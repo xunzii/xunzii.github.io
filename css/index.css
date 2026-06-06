@@ -1,13 +1,12 @@
 .parent {
     height: 100%;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .child {
-    max-width: var(--content-width);
-    min-width: 60%;
+    max-width: 1050px;
+    min-width: var(--content-width); 
     width: var(--content-width);
     border: 1px solid black;
     border-radius: 2.5px;
