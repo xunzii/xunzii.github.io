@@ -6,7 +6,7 @@
 
 .child {
     max-width: 1000px;
-    min-width: 900px; 
+    min-width: 800px; 
     width: var(--content-width);
     border: 1px solid black;
     border-radius: 2.5px;
