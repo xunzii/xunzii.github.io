@@ -37,6 +37,7 @@ body {
     background-color: var(--background-color); 
 }
 
+/* External Links -------------------------------------------*/
 a {
     color: var(--link-color);
     text-decoration: none;
@@ -53,8 +54,9 @@ a:active {
 a:visited {
     color: var(--link-visited-color);
 }
+/*------------------------------------------------------------*/
 
-/* Navigation bar */
+/* Navigation bar --------------------------------------------*/
 nav {
     display: flex;
     justify-content: space-between;
@@ -64,3 +66,9 @@ nav {
 nav .left a {
     color: var(--text-color);
 }
+
+nav .right a {
+    margin: 0 10px;
+}
+/*----------------------------------------------------------*/
+
