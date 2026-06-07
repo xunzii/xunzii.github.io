@@ -72,3 +72,18 @@ nav .right a {
 }
 /*----------------------------------------------------------*/
 
+
+@media (max-width: 600px) {
+    /*navbar*/
+    nav{
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a span {
+        display: none;   
+    }
+}
