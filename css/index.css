@@ -4,7 +4,7 @@
     --link-color: purple;
     --link-hover-color: blue;
     --link-active-color: red;
-    --link-visited-color: blue;
+    --link-visited-color: orange;
 }
 
 .parent {
@@ -15,11 +15,11 @@
 }
 
 .child {
-    width: 900px; 
-    min-width: 200px;
+    width: 1050px; 
+    min-width: 850px;
     border: 1px solid black;
     border-radius: 2.5px;
-    padding: 10px;
+    padding: 20px;
 }
 
 * {
@@ -37,24 +37,9 @@ body {
     background-color: var(--background-color); 
 }
 
-/* External Links -------------------------------------------*/
 a {
-    color: var(--link-color);
     text-decoration: none;
 }
-
-a:hover {
-    color: var(--link-hover-color);
-}
-
-a:active {
-    color: var(--link-active-color);
-}
-
-a:visited {
-    color: var(--link-visited-color);
-}
-/*------------------------------------------------------------*/
 
 /* Navigation bar --------------------------------------------*/
 nav {
@@ -65,25 +50,77 @@ nav {
 
 nav .left a {
     color: var(--text-color);
+    font-size: 25px;
 }
 
 nav .right a {
-    margin: 0 10px;
+    color: var(--link-color);
+    padding: 0 15px;
 }
+
+nav .right a:hover {
+    color: var(--link-hover-color);
+}
+
+nav .right a:active {
+    color: var(--link-active-color);
+}
+
 /*----------------------------------------------------------*/
 
+/*Section-1: Hero ------------------------------------------*/
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    gap: 40px;
 
-@media (max-width: 600px) {
-    /*navbar*/
-    nav{
-        padding: 0 20px;
-    }
-
-    nav .right a {
-        font-size: 22px;
-    }
-
-    nav .right a span {
-        display: none;   
-    }
 }
+
+.hero-section .text {
+    flex: 5;
+}
+
+.hero-section .text h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    color: var(--link-color);
+    display: inline-block;
+    padding: 10px;
+    border: 0.5px solid;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--link-hover-color);
+}
+
+.hero-section .text .links a:active {
+    color: var(--link-active-color);
+}
+
+.hero-section .image {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .image img {
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 5px;
+}
+/*----------------------------------------------------------*/
