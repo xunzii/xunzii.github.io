@@ -77,7 +77,6 @@ nav .right a:active {
     margin-top: 5px;
     margin-bottom: 50px;
     gap: 40px;
-
 }
 
 .hero-section .text {
@@ -124,3 +123,32 @@ nav .right a:active {
     padding: 5px;
 }
 /*----------------------------------------------------------*/
+
+/* Section 2: Skills ----------------------------------------*/
+.skills-section h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-section .cells {
+    display: flex ;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    padding: 10px 10px;
+    border: 1px solid #d3d3d3;
+    margin: 10px;
+}
+
+/*-----------------------------------------------------------*/
