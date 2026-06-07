@@ -16,7 +16,7 @@
 
 .child {
     width: 900px; 
-    min-width: 600px;
+    min-width: 200px;
     border: 1px solid black;
     border-radius: 2.5px;
     padding: 10px;
