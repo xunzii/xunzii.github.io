@@ -16,7 +16,7 @@
 }
 
 .child {
-    width: 1050px; 
+    width: 1100px; 
     min-width: 850px;
     border: 1px solid black;
     border-radius: 2.5px;
@@ -260,6 +260,7 @@ nav .right a:active {
 .contact-section .group form button {
     font-size: 16px;
     padding: 5px;
+    margin-bottom: 15px;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(238, 238, 238);
     border: 1px solid var(--border-color);
