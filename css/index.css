@@ -1,7 +1,9 @@
 :root {
-    --text-color: #1a1c20;
+    --text-color: black;
     --background-color: white;
     --link-color: purple;
+    --link-hover-color: blue;
+    --link-active-color: red;
 }
 
 .parent {
@@ -12,9 +14,8 @@
 }
 
 .child {
-    max-width: 1000px;
-    min-width: 800px; 
-    width: var(--content-width);
+    width: 900px; 
+    min-width: 600px;
     border: 1px solid black;
     border-radius: 2.5px;
     padding: 10px;
@@ -40,9 +41,17 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: var(--link-hover-color);
+}
+
+a:active {
+    color: var(--link-active-color);
+}
+
 /* Navigation bar */
 nav {
     display: flex;
     justify-content: space-between;
-    height:
+    align-items: center;
 }
