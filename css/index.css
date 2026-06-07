@@ -1,7 +1,14 @@
+:root {
+    --text-color: #1a1c20;
+    --background-color: white;
+    --link-color: purple;
+}
+
 .parent {
     height: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .child {
@@ -13,11 +20,29 @@
     padding: 10px;
 }
 
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p {
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: var(--background-color); 
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    height:
 }
