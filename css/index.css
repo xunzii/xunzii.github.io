@@ -4,6 +4,7 @@
     --link-color: purple;
     --link-hover-color: blue;
     --link-active-color: red;
+    --link-visited-color: blue;
 }
 
 .parent {
@@ -49,9 +50,17 @@ a:active {
     color: var(--link-active-color);
 }
 
+a:visited {
+    color: var(--link-visited-color);
+}
+
 /* Navigation bar */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+nav .left a {
+    color: var(--text-color);
 }
