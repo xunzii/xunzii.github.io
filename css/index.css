@@ -51,7 +51,7 @@ nav {
 
 nav .left a {
     color: var(--text-color);
-    font-size: 25px;
+    font-size: 30px;
 }
 
 nav .right a {
@@ -66,7 +66,6 @@ nav .right a:hover {
 nav .right a:active {
     color: var(--link-active-color);
 }
-
 /*----------------------------------------------------------*/
 
 /*Section-1: Hero ------------------------------------------*/
