@@ -1,0 +1,76 @@
+/* html ------------------------------ */
+
+html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+}
+
+/* ----------------------------------- */
+
+/* wrapper --------------------------- */
+#wrapper {
+    display: block;
+    min-height: 1000px;
+    width: 1100px;
+    height: 800px;
+    margin: 20px auto;
+
+
+}
+/* ----------------------------------- */
+
+/* body ------------------------------ */
+body {
+    color: rgb(182, 178, 178);
+    font-family: Courier New, monospace;
+    font-size: 20px;
+    background-color: black;
+
+}
+/* ----------------------------------- */
+
+/* navigation bar -------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 80px;
+}
+
+/* responsible for the navigation bar's background color and border */
+#page #wrapper #navigation-bar {
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(10, 10, 10);
+    border: 0.25px solid rgb(135, 132, 132);
+    border-radius: 2.5px;
+}
+
+#page #wrapper #navigation-bar .internal-links a {
+    font-size: 40px;
+    text-decoration: none;
+    color: rgb(182, 178, 178);
+    margin-right: 20px;
+}
+
+#page #wrapper #navigation-bar .external-links a {
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#page #wrapper #navigation-bar .external-links a:hover {
+    text-decoration: none;
+    color: greenyellow;
+    margin-right: 20px;
+}
+
+#page #wrapper #navigation-bar .external-links a:active {
+    text-decoration: none;
+    color: orangered;
+    margin-right: 20px;
+}
+
+/* ----------------------------------- */
