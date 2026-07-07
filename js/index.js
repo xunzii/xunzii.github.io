@@ -39,7 +39,7 @@ function updateISTClock() {
 
   // Construct the string: "July 7, 2026, 09:50:00 AM"
   // Note: hour is already 2-digit (e.g., "09") from hour: '2-digit'
-  const istString = `Date: ${day} ${month}, ${year} | Time: ${hour}:${minute}:${second} ${dayPeriod}`;
+  const istString = `Date: ${day} ${month}, ${year} | Time: ${hour}:${minute}:${second} ${dayPeriod} (IST)`;
 
   document.getElementById('footer-time').textContent = istString;
 }
