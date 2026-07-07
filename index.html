@@ -10,43 +10,74 @@
     <title>x u n z i i</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="icon" href="./assets/icons/pixel_icon.jpg" type="image/x-icon">
+    <style>
+        /* By default, show the website and hide the message */
+        #wrapper {
+            display: block;
+        }
+
+        #mobile-message {
+            display: none;
+        }
+
+        /* If screen is smaller than 1024px (tablets/phones), swap them */
+        @media (max-width: 1023px) {
+            #wrapper {
+                display: none;
+            }
+
+            #mobile-message {
+                display: block;
+                text-align: center;
+                padding: 50px;
+                font-family: sans-serif;
+            }
+        }
+    </style>
 </head>
 
 <div id="page">
     <body>
+        <!-- This message shows ONLY on mobile -->
+        <div id="mobile-message">
+            <h1>Desktop View Only</h1>
+            <p>Please access this website from a laptop or desktop computer.</p>
+        </div>
         <!-- wrapper -->
         <div id="wrapper">
-            <!-- navigation bar -->
-            <div id="navigation-bar">
-                <nav>
-                    <!-- home -->
-                    <div class="internal-links">
-                        <a href="./index.html"><b><span>x u n z i i</span></b></a>
-                    </div>
-                    <div class="external-links">
-                        <!-- github -->
-                        <a href="https://github.com/xunzii" target="_blank">
-                            <span>GitHub</span>
-                        </a>
-                        <!-- linkedin -->
-                        <a href="https://www.linkedin.com/in/ayananta-paul-b26023406/" target="_blank">
-                            <span>LinkedIn</span>
-                        </a>
-                        <!-- codeforces -->
-                        <a href="https://codeforces.com/profile/xunzi" target="_blank">
-                            <span>Codeforces</span>
-                        </a>
-                        <!-- email -->
-                        <a href="mailto:ayanantapaul@gmail.com">
-                            <span>Email</span>
-                        </a>
-                    </div>
-                </nav>
-            </div>
-            <div id="page">
-                <main>
+            <div id="sub-wrapper">
+                <!-- navigation bar -->
+                <div id="navigation-bar">
+                    <nav>
+                        <!-- home -->
+                        <div class="internal-links">
+                            <a href="./index.html"><b><span>x u n z i i</span></b></a>
+                        </div>
+                        <div class="external-links">
+                            <!-- github -->
+                            <a href="https://github.com/xunzii" target="_blank">
+                                <span>GitHub</span>
+                            </a>
+                            <!-- linkedin -->
+                            <a href="https://www.linkedin.com/in/ayananta-paul-b26023406/" target="_blank">
+                                <span>LinkedIn</span>
+                            </a>
+                            <!-- codeforces -->
+                            <a href="https://codeforces.com/profile/xunzi" target="_blank">
+                                <span>Codeforces</span>
+                            </a>
+                            <!-- email -->
+                            <a href="mailto:ayanantapaul@gmail.com">
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div id="page">
+                    <main>
 
-                </main>
+                    </main>
+                </div>
             </div>
         </div>
     </body>
