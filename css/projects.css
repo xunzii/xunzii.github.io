@@ -1,0 +1,121 @@
+/* global variables ------------------ */
+:root {
+    --text-color: rgb(200, 200, 200);
+    /* off-white */
+    --link-color: #58a6ff;
+    /* GitHub blue */
+    --link-hover-color: greenyellow;
+    /* Greenyellow */
+    --link-active-color: orangered;
+    /* Orangered */
+    --background-color: black;
+    /* Black */
+    --border-color: grey;
+    /* Grey */
+}
+/* ----------------------------------- */
+
+
+/* html ------------------------------ */
+html {
+    color-scheme: dark;
+}
+/* ----------------------------------- */
+
+/* body ------------------------------ */
+body {
+    color: var(--text-color);
+    font-family: Courier New, monospace;
+    font-size: 20px;
+}
+/* ----------------------------------- */
+
+/* wrappers -------------------------- */
+#wrapper {
+    display: block;
+    min-height: content;
+    width: 1150px;
+    margin: 20px auto;
+    border: 0.25px solid var(--border-color);
+    border-radius: 2.5px;
+    background-color: var(--background-color);
+}
+
+#sub-wrapper {
+    display: block;
+    width: 1100px;
+    height: content;
+    margin: 20px auto;
+    background-color: var(--background-color);
+    /* border: 0.25px solid red; 
+    /* for testing only*/
+}
+/* ----------------------------------- */
+
+/* navigation bar -------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 80px;
+}
+
+/* responsible for the navigation bar's background color and border */
+#page #wrapper #sub-wrapper #navigation-bar {
+    align-items: center;
+    padding: 10px;
+    background-color: var(--background-color);
+    border: 0.25px solid var(--border-color);
+    border-radius: 2.5px;
+}
+
+#page #wrapper #sub-wrapper #navigation-bar nav #left {
+    font-size: 40px;
+    font-family: Courier New, monospace;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 20px;
+}
+
+#page #wrapper #sub-wrapper #navigation-bar #right a {
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 20px;
+    color: var(--link-color);
+}
+
+#page #wrapper #sub-wrapper #navigation-bar #right a:hover {
+    text-decoration: none;
+    color: var(--link-hover-color);
+    margin-right: 20px;
+}
+
+#page #wrapper #sub-wrapper #navigation-bar #right a:active {
+    text-decoration: none;
+    color: var(--link-active-color);
+    margin-right: 20px;
+}
+/* ----------------------------------- */
+
+/* horizontal rule ---------------------- */
+hr {
+    border: none;
+    /* Remove default border */
+    height: 0.25px;
+    background-color: var(--border-color);
+    margin-top: 20px;
+    /* spacing above and below */
+}
+/* -------------------------------------- */
+
+/* footer ----------------------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 15px;
+    /* border-top: 0.25px solid var(--border-color); */
+}
+/* ----------------------------------- */
