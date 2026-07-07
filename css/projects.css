@@ -13,6 +13,7 @@
     --border-color: grey;
     /* Grey */
 }
+
 /* ----------------------------------- */
 
 
@@ -20,6 +21,7 @@
 html {
     color-scheme: dark;
 }
+
 /* ----------------------------------- */
 
 /* body ------------------------------ */
@@ -28,6 +30,7 @@ body {
     font-family: Courier New, monospace;
     font-size: 20px;
 }
+
 /* ----------------------------------- */
 
 /* wrappers -------------------------- */
@@ -50,6 +53,7 @@ body {
     /* border: 0.25px solid red; 
     /* for testing only*/
 }
+
 /* ----------------------------------- */
 
 /* navigation bar -------------------- */
@@ -96,6 +100,37 @@ nav {
     color: var(--link-active-color);
     margin-right: 20px;
 }
+
+/* ----------------------------------- */
+
+/* projects table section ------------ */
+#projects-section {
+    font-size: 15px;
+    display: block;
+    margin: 20px 0;
+    /* border: 0.25px solid #58a6ff;
+    /* for testing only */
+}
+
+#project-table table {
+    background-color: var(--border-color);
+    width: 1100px;
+    text-align: center;
+}
+
+#project-table tr {
+    background-color: var(--background-color);
+}
+
+#project-table th {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#project-table td {
+    padding: 5px;
+}
+
 /* ----------------------------------- */
 
 /* horizontal rule ---------------------- */
@@ -107,6 +142,7 @@ hr {
     margin-top: 20px;
     /* spacing above and below */
 }
+
 /* -------------------------------------- */
 
 /* footer ----------------------------- */
@@ -118,4 +154,5 @@ footer {
     font-size: 15px;
     /* border-top: 0.25px solid var(--border-color); */
 }
+
 /* ----------------------------------- */
