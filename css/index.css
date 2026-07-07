@@ -1,3 +1,15 @@
+/* global variables ------------------ */
+:root {
+    --text-color: rgb(200, 200, 200); /* off-white */
+    --link-color: #58a6ff; /* GitHub blue */
+    --link-hover-color: greenyellow; /* Greenyellow */
+    --link-active-color: orangered; /* Orangered */
+    --background-color: black; /* Black */
+    --border-color: grey; /* Grey */
+}
+/* ----------------------------------- */
+
+
 /* html ------------------------------ */
 
 html {
@@ -13,7 +25,7 @@ html {
     min-height: content;
     width: 1150px;
     margin: 20px auto;
-    border: 0.25px solid grey;
+    border: 0.25px solid var(--border-color);
     border-radius: 2.5px;
 }
 
@@ -25,16 +37,18 @@ html {
     /* border: 0.25px solid red; 
     /* for testing only*/
 }
+
 /* ----------------------------------- */
 
 /* body ------------------------------ */
 body {
-    color: rgb(182, 178, 178);
+    color: var(--text-color);
     font-family: Courier New, monospace;
     font-size: 20px;
-    background-color: black;
+    background-color: var(--background-color);
 
 }
+
 /* ----------------------------------- */
 
 /* navigation bar -------------------- */
@@ -50,9 +64,9 @@ nav {
 /* responsible for the navigation bar's background color and border */
 #page #wrapper #sub-wrapper #navigation-bar {
     align-items: center;
-    padding: 10px;   
-    background-color: black;
-    border: 0.25px solid rgb(135, 132, 132);
+    padding: 10px;
+    background-color: var(--background-color);
+    border: 0.25px solid var(--border-color);
     border-radius: 2.5px;
 }
 
@@ -60,7 +74,7 @@ nav {
     font-size: 40px;
     font-family: Courier New, monospace;
     text-decoration: none;
-    color: rgb(182, 178, 178);
+    color: var(--text-color);
     margin-right: 20px;
 }
 
@@ -68,17 +82,18 @@ nav {
     padding: 10px;
     text-decoration: none;
     margin-right: 20px;
+    color: var(--link-color);
 }
 
 #page #wrapper #sub-wrapper #navigation-bar .external-links a:hover {
     text-decoration: none;
-    color: greenyellow;
+    color: var(--link-hover-color);
     margin-right: 20px;
 }
 
 #page #wrapper #sub-wrapper #navigation-bar .external-links a:active {
     text-decoration: none;
-    color: orangered;
+    color: var(--link-active-color);
     margin-right: 20px;
 }
 
@@ -96,17 +111,51 @@ nav {
     margin: 20px 0;
     margin-right: 20px;
     padding: 10px;
-    border: 0.25px solid rgb(135, 132, 132);
+    border: 0.25px solid var(--border-color);
 }
 
 #hero-section #hero-section-text {
     font-size: 20px;
     font-family: Courier New, monospace;
     text-decoration: none;
-    color: rgb(182, 178, 178);
-    margin-right: 20px;
+    color: var(--text-color);
+    margin: 10px 10px;
 }
 
+#hero-section #hero-section-text #hero-section-links {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    /* border: 0.25px solid var(--border-color); */
+    /* for testing only */
+}
+
+#hero-section #hero-section-text #hero-section-links a {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--link-color);
+    border: 0.25px solid var(--link-color);
+    border-radius: 2.5px;
+}
+
+#hero-section #hero-section-text #hero-section-links a:hover {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--link-hover-color);
+    border: 0.25px solid var(--link-hover-color);
+    border-radius: 2.5px;
+}
+
+#hero-section #hero-section-text #hero-section-links a:active {
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--link-active-color);
+    border: 0.25px solid var(--link-active-color);
+    border-radius: 2.5px;
+}
 /* --------------------------------------- */
 
 /* footer ----------------------------- */
