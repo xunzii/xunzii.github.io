@@ -172,9 +172,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 10px;
     font-size: 15px;
     /* border-top: 0.25px solid var(--border-color); */
 }
