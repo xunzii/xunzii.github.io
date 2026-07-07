@@ -158,13 +158,25 @@ nav {
 }
 /* --------------------------------------- */
 
+/* horizontal rule ---------------------- */
+hr {
+  border: none;    /* Remove default border */
+  height: 0.25px;
+  background-color: var(--border-color); 
+  margin-top: 20px;  /* spacing above and below */
+}   
+/* -------------------------------------- */
+
 /* footer ----------------------------- */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
     font-size: 15px;
+    /* border-top: 0.25px solid var(--border-color); */
 }
 
 /* ----------------------------------- */
