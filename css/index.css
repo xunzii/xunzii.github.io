@@ -10,7 +10,7 @@ html {
 /* wrappers -------------------------- */
 #wrapper {
     display: block;
-    min-height: 925px;
+    min-height: content;
     width: 1150px;
     margin: 20px auto;
     border: 0.25px solid grey;
@@ -19,9 +19,8 @@ html {
 
 #sub-wrapper {
     display: block;
-    min-height: auto;
     width: 1100px;
-    height: 800px;
+    height: content;
     margin: 20px auto;
     /* border: 0.25px solid red; 
     /* for testing only*/
@@ -52,13 +51,14 @@ nav {
 #page #wrapper #sub-wrapper #navigation-bar {
     align-items: center;
     padding: 10px;   
-    background-color: rgb(15, 15, 15);
+    background-color: black;
     border: 0.25px solid rgb(135, 132, 132);
     border-radius: 2.5px;
 }
 
 #page #wrapper #sub-wrapper #navigation-bar .internal-links a {
     font-size: 40px;
+    font-family: Courier New, monospace;
     text-decoration: none;
     color: rgb(182, 178, 178);
     margin-right: 20px;
@@ -80,6 +80,42 @@ nav {
     text-decoration: none;
     color: orangered;
     margin-right: 20px;
+}
+
+/* ----------------------------------- */
+
+/* hero section -------------------------- */
+#hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#hero-section #hero-section-image img {
+    height: 300px;
+    margin: 20px 0;
+    margin-right: 20px;
+    padding: 10px;
+    border: 0.25px solid rgb(135, 132, 132);
+}
+
+#hero-section #hero-section-text {
+    font-size: 20px;
+    font-family: Courier New, monospace;
+    text-decoration: none;
+    color: rgb(182, 178, 178);
+    margin-right: 20px;
+}
+
+/* --------------------------------------- */
+
+/* footer ----------------------------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    font-size: 15px;
 }
 
 /* ----------------------------------- */
