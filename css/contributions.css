@@ -21,6 +21,7 @@
 html {
     color-scheme: dark;
 }
+
 /* ----------------------------------- */
 
 /* body ------------------------------ */
@@ -29,6 +30,7 @@ body {
     font-family: Courier New, monospace;
     font-size: 20px;
 }
+
 /* ----------------------------------- */
 
 /* wrappers -------------------------- */
@@ -51,8 +53,8 @@ body {
     /* border: 0.25px solid red; 
     /* for testing only*/
 }
-/* ----------------------------------- */
 
+/* ----------------------------------- */
 
 /* navigation bar -------------------- */
 nav {
@@ -72,7 +74,7 @@ nav {
     border-radius: 2.5px;
 }
 
-#page #wrapper #sub-wrapper #navigation-bar .internal-links a {
+#page #wrapper #sub-wrapper #navigation-bar nav #left {
     font-size: 40px;
     font-family: Courier New, monospace;
     text-decoration: none;
@@ -80,7 +82,7 @@ nav {
     margin-right: 20px;
 }
 
-#page #wrapper #sub-wrapper #navigation-bar .external-links a {
+#page #wrapper #sub-wrapper #navigation-bar #right a {
     padding: 10px;
     text-decoration: none;
     margin-right: 20px;
@@ -88,80 +90,20 @@ nav {
     transition: 0.25s;
 }
 
-#page #wrapper #sub-wrapper #navigation-bar .external-links a:hover {
+#page #wrapper #sub-wrapper #navigation-bar #right a:hover {
     text-decoration: none;
     color: var(--link-hover-color);
     margin-right: 20px;
 }
 
-#page #wrapper #sub-wrapper #navigation-bar .external-links a:active {
+#page #wrapper #sub-wrapper #navigation-bar #right a:active {
     text-decoration: none;
     color: var(--link-active-color);
     margin-right: 20px;
 }
+
 /* ----------------------------------- */
 
-/* hero section -------------------------- */
-#hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#hero-section #hero-section-image img {
-    flex: 2;
-    height: 350px;
-    margin: 20px 0;
-    margin-right: 20px;
-    padding: 10px;
-    border: 0.25px solid var(--border-color);
-    border-radius: 2px;
-}
-
-#hero-section #hero-section-text {
-    flex: 5;
-    font-size: 20px;
-    font-family: Courier New, monospace;
-    text-decoration: none;
-    color: var(--text-color);
-    margin: 10px 10px;
-}
-
-#hero-section #hero-section-text #hero-section-links {
-    margin-top: 25px;    
-    /* border: 0.25px solid var(--border-color); */
-    /* for testing only */
-}
-
-#hero-section #hero-section-text #hero-section-links a {
-    display: inline-block;      /* to do these kind of buttons use inline-block */
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: var(--link-color);
-    border: 0.25px solid var(--link-color);
-    border-radius: 2.5px;
-    transition: 0.25s;
-}
-
-#hero-section #hero-section-text #hero-section-links a:hover {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: var(--link-hover-color);
-    border: 0.25px solid var(--link-hover-color);
-    border-radius: 2.5px;
-}
-
-#hero-section #hero-section-text #hero-section-links a:active {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
-    color: var(--link-active-color);
-    border: 0.25px solid var(--link-active-color);
-    border-radius: 2.5px;
-}
-/* --------------------------------------- */
 
 /* horizontal rule ---------------------- */
 hr {
@@ -172,6 +114,7 @@ hr {
     margin-top: 20px;
     /* spacing above and below */
 }
+
 /* -------------------------------------- */
 
 /* footer ----------------------------- */
