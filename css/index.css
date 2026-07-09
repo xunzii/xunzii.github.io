@@ -1,186 +1,278 @@
-/* global variables ------------------ */
 :root {
+    /* color variables */
     --text-color: rgb(200, 200, 200);
-    /* off-white */
-    --link-color: #58a6ff;
-    /* GitHub blue */
-    --link-hover-color: greenyellow;
-    /* Greenyellow */
-    --link-active-color: orangered;
-    /* Orangered */
     --background-color: black;
-    /* Black */
     --border-color: grey;
-    /* Grey */
+    --link-color: #58a6ff;
+    --link-hover-color: greenyellow;
+    --link-active-color: orangered;
+
+
+    /* border width variable */
+    --border-width: 0.25px;
 }
 
-/* ----------------------------------- */
-
-
-/* html ------------------------------ */
 html {
     color-scheme: dark;
+    scroll-behavior: smooth;
 }
-/* ----------------------------------- */
 
-/* body ------------------------------ */
 body {
+    font-family: 'Courier New', Courier, monospace;
     color: var(--text-color);
-    font-family: Courier New, monospace;
-    font-size: 20px;
 }
-/* ----------------------------------- */
 
-/* wrappers -------------------------- */
-#wrapper {
+.wrapper {
     display: block;
+    width: 1200px;
     min-height: content;
-    width: 1150px;
+    padding: 30px;
     margin: 20px auto;
     border: 0.25px solid var(--border-color);
     border-radius: 2.5px;
     background-color: var(--background-color);
 }
 
-#sub-wrapper {
+.nav-bar {
     display: block;
-    width: 1100px;
-    height: content;
-    margin: 20px auto;
-    background-color: var(--background-color);
-    /* border: 0.25px solid red; 
-    /* for testing only*/
+    justify-content: space-between;
+    padding: 0px;
+    margin-bottom: 20px;
+    align-items: center;
 }
-/* ----------------------------------- */
 
+.nav-bar .picture img {
+    width: 1200px;
+}
 
-/* navigation bar -------------------- */
-nav {
+.nav-bar .external-link {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
     align-items: center;
-    padding: 0 30px;
-    height: 80px;
-}
-
-/* responsible for the navigation bar's background color and border */
-#page #wrapper #sub-wrapper #navigation-bar {
-    align-items: center;
-    padding: 10px;
-    background-color: var(--background-color);
-    border: 0.25px solid var(--border-color);
-    border-radius: 2.5px;
-}
-
-#page #wrapper #sub-wrapper #navigation-bar .internal-links a {
-    font-size: 40px;
-    font-family: Courier New, monospace;
-    text-decoration: none;
-    color: var(--text-color);
-    margin-right: 20px;
-}
-
-#page #wrapper #sub-wrapper #navigation-bar .external-links a {
-    padding: 10px;
-    text-decoration: none;
-    margin-right: 20px;
-    color: var(--link-color);
-    transition: 0.25s;
-}
-
-#page #wrapper #sub-wrapper #navigation-bar .external-links a:hover {
-    text-decoration: none;
-    color: var(--link-hover-color);
-    margin-right: 20px;
-}
-
-#page #wrapper #sub-wrapper #navigation-bar .external-links a:active {
-    text-decoration: none;
-    color: var(--link-active-color);
-    margin-right: 20px;
-}
-/* ----------------------------------- */
-
-/* hero section -------------------------- */
-#hero-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#hero-section #hero-section-image img {
-    flex: 2;
-    height: 350px;
-    margin: 20px 0;
-    margin-right: 20px;
-    padding: 10px;
-    border: 0.25px solid var(--border-color);
+    border: var(--border-width) solid var(--border-color);
     border-radius: 2px;
 }
 
-#hero-section #hero-section-text {
-    flex: 5;
-    font-size: 20px;
-    font-family: Courier New, monospace;
-    text-decoration: none;
+.nav-bar .external-link .left a {
     color: var(--text-color);
-    margin: 10px 10px;
+    font-size: 50px;
+    padding: 20px;
+    margin: 0px;
+    text-decoration: none;
 }
 
-#hero-section #hero-section-text #hero-section-links {
-    margin-top: 25px;    
-    /* border: 0.25px solid var(--border-color); */
-    /* for testing only */
+.nav-bar .external-link .right {
+    display: flex;
 }
 
-#hero-section #hero-section-text #hero-section-links a {
-    display: inline-block;      /* to do these kind of buttons use inline-block */
+.nav-bar .external-link .right .button {
+    justify-content: center;
+}
+
+.nav-bar .external-link .right .button a {
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    color: var(--link-color);
+    border: 0.25px solid var(--background-color);
+    border-radius: 2.5px;
+    transition: 0.2s;
+}
+
+.nav-bar .external-link .right .button a:hover {
+    color: var(--link-hover-color);
+    border: var(--border-width) solid var(--link-hover-color);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.nav-bar .external-link .right .button a:active {
+    color: var(--link-active-color);
+    border: var(--border-width) solid var(--link-active-color);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.hero .picture img {
+    width: 320px;
+    padding: 10px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 2px;
+
+}
+
+.hero .introduction {
+    display: block;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+}
+
+.hero .introduction h2 {
+    font-size: 30px;
+}
+
+.hero .introduction p {
+    font-size: 18px;
+}
+
+.hero .introduction .internal-links {
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: left;
+}
+
+.hero .introduction .internal-links a {
+    font-size: 18px;
+    display: inline-block;
     padding: 10px;
     margin: 10px;
     text-decoration: none;
     color: var(--link-color);
     border: 0.25px solid var(--link-color);
     border-radius: 2.5px;
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
-#hero-section #hero-section-text #hero-section-links a:hover {
-    padding: 10px;
-    margin: 10px;
-    text-decoration: none;
+.hero .introduction .internal-links a:hover {
     color: var(--link-hover-color);
-    border: 0.25px solid var(--link-hover-color);
-    border-radius: 2.5px;
-}
-
-#hero-section #hero-section-text #hero-section-links a:active {
-    padding: 10px;
+    border: var(--border-width) solid var(--link-hover-color);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 15px;
     margin: 10px;
-    text-decoration: none;
-    color: var(--link-active-color);
-    border: 0.25px solid var(--link-active-color);
-    border-radius: 2.5px;
+    transition: 0.2s;
 }
-/* --------------------------------------- */
 
-/* horizontal rule ---------------------- */
+.hero .introduction .internal-links a:active {
+    color: var(--link-active-color);
+    border: var(--border-width) solid var(--link-active-color);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.skills .heading h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.skills {
+    margin-bottom: 100px;
+}
+
+.skills .cells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.skills .cells .cell {
+    display: inline-block;
+    justify-items: center;
+    padding: 20px;
+    margin: 10px;
+    border: 0.25px solid var(--border-color);
+}
+
+.skills .cells .cell .cell-img img {
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+}
+
+.skills .cells .cell .cell-txt {
+    padding: 5px;
+}
+
+.projects {
+    margin-bottom: 100px;
+}
+
+.projects .heading h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.projects .project-table {
+    justify-content: center;
+}
+
+.projects .project-table table {
+    margin: 30px auto;
+    background-color: var(--border-color);
+    width: 1100px;
+    text-align: center;
+}
+
+.projects .project-table tr {
+    background-color: var(--background-color);
+}
+
+.projects .project-table th {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.projects .project-table td {
+    padding: 5px;
+}
+
+.contributions h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.contributions .cells {
+    display: block;
+}
+
+.contributions .cells .cell {
+    border: var(--border-width) solid var(--border-color);
+    padding: 20px;
+    margin: 20px;
+}
+
+.contributions .cells .cell .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contributions .cells .cell h4 {
+    font-size: 20px;
+}
+
 hr {
     border: none;
-    /* Remove default border */
     height: 0.25px;
     background-color: var(--border-color);
     margin-top: 20px;
-    /* spacing above and below */
 }
-/* -------------------------------------- */
 
-/* footer ----------------------------- */
-footer {
+.footer-section footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    font-size: 15px;
-    /* border-top: 0.25px solid var(--border-color); */
+    margin-top: 25px;    
 }
-/* ----------------------------------- */

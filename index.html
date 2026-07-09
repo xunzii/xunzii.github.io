@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -10,139 +11,338 @@
     <title>x u n z i i</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
     <link rel="icon" href="./assets/icons/pixel_icon.jpg" type="image/x-icon">
-    <style>
-        /* By default, show the website and hide the message */
-        #wrapper {
-            display: block;
-        }
-
-        #mobile-message {
-            display: none;
-        }
-        
-        /* If screen is smaller than 1024px (tablets/phones), swap them */
-        @media (max-width: 1023px) {
-            #wrapper {
-                display: none;
-            }
-
-            #mobile-message {
-                display: block;
-                text-align: center;
-                padding: 50px;
-                font-family: sans-serif;
-            }
-        }
-    </style>
 </head>
-<div id="page">
-    <body>
-        <!-- This message shows ONLY on mobile -->
-        <div id="mobile-message">
-            <h1>Desktop View Only</h1>
-            <p>Please access this website from a laptop or desktop computer.</p>
-        </div>
-        <!-- wrapper -->
-        <div id="wrapper">
-            <div id="sub-wrapper">
-                <!-- navigation bar -->
-                <div id="navigation-bar">
-                    <nav>
-                        <!-- home -->
-                        <div class="internal-links">
-                            <a href="/">
-                                <i><b>
-                                    <span>x u n z i i</span>
-                                </b></i>
-                            </a>
-                        </div>
-                        <div class="external-links">
-                            <!-- github -->
-                            <a href="https://github.com/xunzii" target="_blank">
-                                <span>
-                                    GitHub
-                                </span>
-                            </a>
-                            <!-- codeforces -->
-                            <a href="https://codeforces.com/profile/xunzi" target="_blank">
-                                <span>
-                                    Codeforces
-                                </span>
-                            </a>
-                            <!-- linkedin -->
-                            <a href="https://www.linkedin.com/in/ayananta-paul-b26023406/" target="_blank">
-                                <span>
-                                    LinkedIn
-                                </span>
-                            </a>
-                            <!-- email -->
-                            <a href="mailto:ayanantapaul@gmail.com">
-                                <span>
-                                    Email Me
-                                </span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-                <!-- main content  -->
-                <main>
-                    <!-- hero section -->
-                    <div id="hero-section">
-                        <div id="hero-section-image">
-                            <img src="./assets/icons/pixel_icon.jpg" desc="xunzzi's profile picture">
-                        </div>
-                        <div id="hero-section-text">
-                            <h2>
-                                <i><b>Hi, I'm Ayananta Paul!</b></i>
-                            </h2>
-                            <p>
-                                <span>
-                                    Welcome to my personal website! I am a passionate programmer and problem solver,  
-                                    always eager to explore new technologies and challenges. Feel free to explore my
-                                    projects, connect with me on social media, or reach out via email. Let's create
-                                    something amazing together!
-                                </span>
-                            </p>
-                            <div id="hero-section-links">
-                                <!-- link to projects -->
-                                <a href="./html/projects.html">
-                                    <span>
-                                        Projects
-                                    </span>
-                                </a>
-                                <a href="./html/contributions.html">
-                                    <span>
-                                        Contributions
-                                    </span>
-                                </a>
-                                <!-- link to skills -->
-                                <a href="./html/skills.html">
-                                    Skills
-                                </a>
-                                <!-- link to resume -->
-                                <a href="">
-                                    Resume
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                <hr>
-                <footer>
-                    <div id="footer-text">
-                        <span>
-                            &copy; 2026 Ayananta Paul. All rights reserved.
-                        </span>
-                    </div>
-                    <div id="footer-time">
-                        <span>
-                            Current Date: 2024-06-10
-                        </span>
-                    </div>
-                </footer>
-                <script src="./js/live_ist.js"></script>
+
+<body>
+    <div class="wrapper">
+
+        <!-- navigation bar -->
+        <div class="nav-bar">
+
+            <!-- nav-bar-picture -->
+            <div class="picture">
+                <img src="./assets/images/navigation_bar_background.jpg" alt="navigation_bar_background">
             </div>
+
+            <div class="external-link">
+
+                <!-- left side of nav-bar -->
+                <div class="left">
+                    <a href="./index.html">
+                        <span><b><i>x u n z i i</i></b></span>
+                    </a>
+                </div>
+
+                <div class="right">
+
+                    <!-- github link -->
+                    <div class="button">
+                        <a href="https://github.com/xunzii/" target="_blank">
+                            <span>
+                                <b>
+                                    GitHub
+                                </b>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- codeforces link -->
+                    <div class="button">
+                        <a href="https://codeforces.com/profile/xunzi" target="_blank">
+                            <span>
+                                <b>
+                                    Codeforces
+                                </b>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- linkedin link -->
+                    <div class="button">
+                        <a href="https://www.linkedin.com/in/ayananta-paul-b26023406/" target="_blank">
+                            <span>
+                                <b>
+                                    LinkedIn
+                                </b>
+                            </span>
+                        </a>
+                    </div>
+
+                    <!-- email me -->
+                    <div class="button">
+                        <a href="mailto:ayanantapaul@gmail.com">
+                            <span>
+                                <b>
+                                    Email Me
+                                </b>
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
-    </body>
-</div>
+
+        <!-- main -->
+        <main>
+
+            <!-- hero section -->
+            <div class="hero" id="hero">
+
+                <!-- profile picture -->
+                <div class="picture">
+                    <img src="./assets/icons/pixel_icon.jpg" alt="profile_picture">
+                </div>
+
+                <!-- introduction -->
+                <div class="introduction">
+                    <h2>Hi, I'm Ayananta Paul!</h2>
+                    <p>
+                        A 1st year Bachelor of Technology in Electronics and Computer Science Engineering
+                        at Narula Institute of Technology, I am a passionate programmer and problem solver,
+                        always eager to explore new technologies and challenges. Feel free to explore my
+                        projects, connect with me on social media, or reach out via email.
+                        Let's create something amazing together!
+                    </p>
+
+
+                    <div class="internal-links">
+
+                        <!-- skills -->
+                        <div class="links">
+                            <a href="#skills">
+                                <span>
+                                    <b>
+                                        Skills
+                                    </b>
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- projects -->
+                        <div class="links">
+                            <a href="#projects">
+                                <span>
+                                    <b>
+                                        Projects
+                                    </b>
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- contributions -->
+                        <div class="links">
+                            <a href="#contributions">
+                                <span>
+                                    <b>
+                                        Contributions
+                                    </b>
+                                </span>
+                            </a>
+                        </div>
+
+                        <!-- resume -->
+                        <div class="links">
+                            <a href="resume.pdf" target="_blank">
+                                <span>
+                                    <b>
+                                        Resume
+                                    </b>
+                                </span>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- skills section -->
+            <div class="skills" id="skills">
+
+                <div class="heading">
+                    <h3>
+                        <span>
+                            Skills
+                        </span>
+                    </h3>
+                    <hr>
+                </div>
+
+                <div class="cells">
+
+                    <!-- C programming Language -->
+                    <div class="cell">
+                        <div class="cell-img">
+                            <img src="../assets/icons/c-logo.png" alt="c_programming_language_logo">
+                        </div>
+                        <div class="cell-txt">
+                            <span>
+                                C
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="cell">
+                        <div class="cell-img">
+                            <img src="../assets/icons/python-logo.png" alt="python_logo">
+                        </div>
+                        <div class="cell-txt">
+                            <span>
+                                Python
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- HTML -->
+                    <div class="cell">
+                        <div class="cell-img">
+                            <img src="../assets/icons/html-logo.png" alt="html_logo">
+                        </div>
+                        <div class="cell-txt">
+                            <span>
+                                HTML
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="cell">
+                        <div class="cell-img">
+                            <img src="../assets/icons/css-logo.png" alt="css_logo">
+                        </div>
+                        <div class="cell-txt">
+                            <span>
+                                CSS
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Javascript -->
+                    <div class="cell">
+                        <div class="cell-img">
+                            <img src="../assets/icons/js-logo.png" alt="javascript_logo">
+                        </div>
+                        <div class="cell-txt">
+                            <span>
+                                JavaSript
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- add software skills above this line -->
+                </div>
+
+            </div>
+
+            <!-- projects section -->
+            <div class="projects" id="projects">
+
+                <div class="heading">
+                    <h3>
+                        <span>
+                            Projects
+                        </span>
+                    </h3>
+                    <hr>
+                </div>
+
+                <div class="project-table">
+                    <table>
+                        <!-- table header -->
+                        <tr>
+                            <th>Sl.no.</th>
+                            <th>Project Title</th>
+                            <th>Description</th>
+                            <th>Links</th>
+                            <th>Date</th>
+                        </tr>
+                        <!---------- enter table data below ---------->
+                        <tr>
+                            <td>1</td>
+                            <td>Python Weather Application</td>
+                            <td>A python weather app that runs on the web</td>
+                            <td><a href="https://github.com/xunzii/python-weather-app" target="_blank">Click Here</a>
+                            </td>
+                            <td>7th July, 2026</td>
+                        </tr>
+                        <!-------------------------------------------->
+                    </table>
+                </div>
+
+            </div>
+
+            <!-- contributions section -->
+            <div class="contributions" id="contributions">
+
+                <!-- heading -->
+                <div class="heading">
+                    <h3>
+                        <span>
+                            Contributions
+                        </span>
+                    </h3>
+                    <hr>
+                </div>
+
+                <!-- contributions -->
+                <div class="cells">
+
+                    <!---------------- add contributions below this line ------------------>
+
+
+
+                    <div class="cell">
+                        <div class="heading">
+                            <h4>
+                                <!-- heading goes here -->
+                            </h4>
+                            <p>
+                                <!-- date goes here -->
+                            </p>
+                        </div>
+                        <p>
+                            No contributions
+                        </p>
+                    </div>
+
+
+
+
+                    <!--------------------------------------------------------------------->
+
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+        <!-- footer section -->
+        <hr>
+        <div class="footer-section">
+            <footer>
+                <div id="footer-text">
+                    <span>
+                        &copy; 2026 Ayananta Paul. All rights reserved.
+                    </span>
+                </div>
+                <div id="footer-time">
+                    <span>
+                        Current Date: 2024-06-10
+                    </span>
+                </div>
+            </footer>
+        </div>
+        <script src="./js/live_time.js"></script>
+
+    </div>
+</body>
+
 </html>
